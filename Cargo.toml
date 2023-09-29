@@ -9,3 +9,4 @@ edition = "2021"
 polars = { version = "0.33.2", features = ["lazy", "describe", "dtype-datetime",
 "csv", "parquet"] }
 chrono = "0.4.31"
+glob = "0.3.1"
