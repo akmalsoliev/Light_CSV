@@ -22,3 +22,5 @@ Cargo.lock
 # Mac garbage
 .DS_Store
 
+# Output - Debugging
+data/output
