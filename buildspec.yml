@@ -1,16 +1,26 @@
 version: 0.2
 
+env:
+  shell:
+    /bin/bash
+  variables:
+    EXEC_PATH: "target/release/data_processing"
+
 phases:
   install:
-    runtime-versions:
-      java: corretto11
-  pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+      - source $HOME/.cargo/env
+
   build:
     commands:
-      - echo Build started on `date`
-      - mvn install
-  post_build:
-    commands:
-      - echo Build completed on `date`
+      - cargo build --release
+
+artifacts:
+  files:
+    - $EXEC_PATH
+  discard-paths: yes
+
+cache:
+  paths:
+  - $HOME/.cargo/registry/**/*

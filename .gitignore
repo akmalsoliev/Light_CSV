@@ -1,4 +1,3 @@
-/target
 #--------------------------------------------------#
 # The following was generated with gitignore.nvim: #
 #--------------------------------------------------#
@@ -21,6 +20,7 @@ Cargo.lock
 
 # Mac garbage
 .DS_Store
+.idea
 
-# Output - Debugging
-data/output
+# Data - Debugging
+data/
