@@ -1,7 +1,8 @@
 mod util;
 
-use crate::util::run::run_conversion;
+use crate::util::{args_parse::args_parse, run::run_conversion};
 
 fn main() {
-    run_conversion()
+    let (stdin_path, stdout_path) = args_parse();
+    run_conversion(stdin_path, stdout_path)
 }
