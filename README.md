@@ -13,6 +13,14 @@ CSV files to different formats.
 `git clone https://github.com/akmalsoliev/Light_CSV`
 
 2. Run `make setup` that will create all required directories for you. 
-3. Paste your CSV file(s) into `./data/input/`
-4. Run `make run`
+3. Paste your CSV file(s) into `./data/input/` (check Optional argunemnts if want to specify PATH)
+4. Run `make run` (check Optional argunemnts if want to specify OUTPUT)
 5. Enjoy your CSV at lightning speed!
+
+## Optional arguments:
+
+  -h,--help             Show this help message and exit
+
+  -p,--path PATH        path to input with all files to process
+
+  -o,--output OUTPUT    Path to output all processed files
