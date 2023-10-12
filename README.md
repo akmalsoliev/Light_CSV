@@ -1,5 +1,9 @@
 # CSV Converter
 
+<p align="center">
+<img src="./assets/image.jpeg" alt="image" width="300" height="200" />
+</p>
+
 ## Overview 
 This repository contains a simple and efficient tool for converting
 CSV files to different formats.
